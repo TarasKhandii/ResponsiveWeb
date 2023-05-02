@@ -1,0 +1,80 @@
+@import "../../assets/style/colors/colors.scss";
+@import "../../assets/style/fonts/fonts.scss";
+
+.homePage {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__someBlock {
+    h6 {
+      margin-top: 185px;
+      font-family: GilroySemiBold;
+      font-size: 32px;
+      line-height: 38px;
+      color: $black;
+      margin-bottom: 99px;
+      text-align: center;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 223px;
+    &Circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      background-color: #bec2cb;
+      margin-right: 15px;
+    }
+    &Title {
+      margin: 0;
+      color: $black;
+      font-family: RobotoMedium;
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 3px;
+    }
+    &Sub {
+      color: $black;
+      font-family: Roboto;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  &__background {
+    padding-top: 84px;
+    width: 100%;
+    background-color: #f3f3f7;
+    border-top-right-radius: 72px;
+  }
+}
+
+@media (max-width: 800px) {
+  .homePage {
+    &__someBlock {
+      h6 {
+        margin-top: 85px;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+    }
+    &__content {
+      margin-bottom: 123px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .homePage {
+    &__someBlock {
+      h6 {
+        font-size: 28px;
+        line-height: 30px;
+      }
+    }
+  }
+}

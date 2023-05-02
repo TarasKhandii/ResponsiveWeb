@@ -1,0 +1,61 @@
+@import "../../assets/style/colors/colors.scss";
+@import "../../assets/style/fonts/fonts.scss";
+.footerRequest {
+  margin-top: 500px;
+  width: 100%;
+  height: 373px;
+  display: flex;
+  align-items: center;
+  background-color: $tuna;
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__leftBlock {
+    display: flex;
+    flex-direction: column;
+    margin-left: 18%;
+    width: 375px;
+    h1 {
+      color: $white;
+      font-size: 32px;
+      line-height: 39px;
+      letter-spacing: 0.1rem;
+      font-family: MontserratBold;
+      margin-bottom: 73px;
+    }
+  }
+  &__rightBlock {
+    display: flex;
+    flex-direction: column;
+    margin-right: 22%;
+    a {
+      color: $white;
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 19px;
+      font-family: GilroySemiBold;
+      margin-top: 24px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .footerRequest {
+    &__content {
+      flex-direction: column;
+    }
+    &__leftBlock {
+      h1 {
+        margin-bottom: 33px;
+      }
+    }
+    &__rightBlock {
+      margin-right: 0;
+      a {
+        margin-left: 18%;
+      }
+    }
+  }
+}

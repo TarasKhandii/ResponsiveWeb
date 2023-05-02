@@ -1,0 +1,25 @@
+@import "../../assets/style/colors/colors.scss";
+@import "../../assets/style/fonts/fonts.scss";
+
+.greenBtn {
+  width: 217px;
+  height: 58px;
+  background-color: $lightGreen;
+  padding: 19px 22px 19px 28px;
+  display: flex;
+  align-items: center;
+  color: $white;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  justify-content: center;
+  cursor: pointer;
+  div {
+    margin-left: 7px;
+  }
+}
+.greenBtn:hover {
+  background-color: $lightGreen;
+  opacity: 0.6;
+}

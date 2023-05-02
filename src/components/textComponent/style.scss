@@ -1,0 +1,53 @@
+@import "../../assets/style/colors/colors.scss";
+@import "../../assets/style/fonts/fonts.scss";
+
+.textComponent {
+  display: flex;
+  flex-direction: row;
+  &__block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+
+    h1 {
+      margin: 0;
+      margin-bottom: 19px;
+      font-family: GilroySemiBold;
+      font-size: 32px;
+      line-height: 37.5px;
+      color: $black;
+      padding: 0;
+    }
+  }
+  p {
+    max-width: 509px;
+    height: 72px;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 24px;
+    color: $black;
+    margin-bottom: 87px;
+  }
+}
+
+@media (max-width: 600px) {
+  .textComponent {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .textComponent {
+    margin-top: 30px;
+    margin-right: 0;
+    &__block {
+      padding-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 28px;
+      line-height: 30px;
+    }
+  }
+}

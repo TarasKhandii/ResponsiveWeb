@@ -1,0 +1,196 @@
+@import "../../assets/style/colors/colors.scss";
+@import "../../assets/style/fonts/fonts.scss";
+
+.caseStudies {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__spiderBlock {
+    width: 88%;
+    height: 624px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $tinyGrey;
+    border-radius: 72px;
+    margin-top: 500px;
+    margin-left: 6.5%;
+    margin-right: 5.8%;
+    overflow: hidden;
+
+    &Content {
+      display: flex;
+      flex-direction: column;
+      padding-top: 115px;
+      padding-left: 8.52%;
+
+      img {
+        width: 39px;
+        height: 53px;
+        object-fit: contain;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-family: GilroySemiBold;
+        font-size: 40px;
+        line-height: 47px;
+        color: $black;
+        margin-bottom: 8px;
+      }
+
+      span {
+        width: 403px;
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 24px;
+        color: $black;
+        margin-bottom: 202px;
+      }
+    }
+    &Img {
+      align-self: flex-end;
+      padding-top: 120px;
+    }
+  }
+  &__motivatoBlock {
+    width: 88%;
+    height: 624px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $tinyGrey;
+    border-radius: 72px;
+    margin-top: 50px;
+    margin-left: 6.5%;
+    margin-right: 5.8%;
+    margin-bottom: 680px;
+    overflow: hidden;
+    &Img {
+      padding-top: 201px;
+    }
+
+    &Content {
+      display: flex;
+      flex-direction: column;
+      padding-top: 139px;
+      padding-right: 4%;
+      img {
+        width: 164px;
+        height: 28px;
+        object-fit: contain;
+        margin-bottom: 52px;
+      }
+      h2 {
+        font-family: GilroySemiBold;
+        font-size: 40px;
+        line-height: 47px;
+        color: $black;
+        margin-bottom: 8px;
+      }
+      span {
+        width: 493px;
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 24px;
+        color: $black;
+        margin-bottom: 194px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .caseStudies {
+    &__spiderBlock {
+      height: fit-content;
+      flex-direction: column;
+      margin-top: 300px;
+      &Content {
+        span {
+          margin-bottom: 50px;
+        }
+      }
+      &Img {
+        padding-top: 80px;
+      }
+    }
+    &__motivatoBlock {
+      flex-direction: column-reverse;
+      height: fit-content;
+      margin-top: 50px;
+      &Content {
+        padding-left: 8.52%;
+        padding-top: 69px;
+        padding-right: 0;
+        span {
+          margin-bottom: 50px;
+        }
+      }
+
+      &Img {
+        padding-top: 100px;
+        align-self: start;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .caseStudies {
+    &__spiderBlock {
+      width: 92%;
+      margin-top: 200px;
+      &Img {
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+      }
+    }
+    &__motivatoBlock {
+      width: 92%;
+      &Img {
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .caseStudies {
+    &__spiderBlock {
+      margin-top: 100px;
+      &Content {
+        padding-top: 65px;
+        padding-left: 4%;
+        span {
+          width: 90%;
+          margin-bottom: 20px;
+        }
+      }
+      &Img {
+        padding-top: 50px;
+      }
+    }
+    &__motivatoBlock {
+      flex-direction: column-reverse;
+      height: fit-content;
+      margin-top: 50px;
+      &Content {
+        padding-left: 4%;
+        padding-top: 69px;
+        padding-right: 0;
+        span {
+          width: 90%;
+          margin-bottom: 50px;
+        }
+      }
+      &Img {
+        padding-top: 50px;
+        align-self: start;
+      }
+    }
+  }
+}

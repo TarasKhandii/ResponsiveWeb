@@ -1,0 +1,232 @@
+@import "../../assets/style/colors/colors.scss";
+@import "../../assets/style/fonts/fonts.scss";
+
+.stackTechnology {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 236px;
+  height: 792px;
+  &__textBlock {
+    text-align: center;
+    &Title {
+      font-family: GilroySemiBold;
+      font-size: 48px;
+      line-height: 56px;
+      color: $black;
+      margin-bottom: 53px;
+    }
+    &Sub {
+      font-size: 16px;
+      line-height: 24px;
+      color: $black;
+      font-family: MontserratSemiBold;
+    }
+    &Desc {
+      font-size: 16px;
+      line-height: 24px;
+      color: $black;
+      font-family: Roboto;
+    }
+  }
+  &__mongoDBSmall {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+  }
+  &__awsSmall {
+    position: absolute;
+    left: 19%;
+    top: 40%;
+  }
+  &__awsSmall2 {
+    position: absolute;
+    right: 40%;
+    bottom: 8%;
+  }
+  &__awsBig {
+    position: absolute;
+    left: 24.5%;
+    top: 0;
+  }
+  &__reactSmall {
+    position: absolute;
+    bottom: 13%;
+    left: 11%;
+  }
+  &__reactSmall2 {
+    position: absolute;
+    bottom: 32%;
+    right: 13%;
+  }
+  &__reactBig {
+    position: absolute;
+    bottom: 0.5%;
+    right: 21.5%;
+  }
+  &__node {
+    position: absolute;
+    left: 29.5%;
+    bottom: -7%;
+  }
+  &__mongoDBMedium {
+    position: absolute;
+    right: 7.2%;
+    bottom: 54%;
+  }
+  &__mongoDBMedium2 {
+    position: absolute;
+    right: 41%;
+    top: 10%;
+  }
+  &__mongoDBBig {
+    position: absolute;
+    right: 22.5%;
+    top: 4%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .stackTechnology {
+    &__reactSmall2 {
+      position: absolute;
+      bottom: 32%;
+      right: 8%;
+    }
+    &__awsSmall {
+      position: absolute;
+      left: 11%;
+      top: 40%;
+    }
+  }
+}
+@media (max-width: 960px) {
+  .stackTechnology {
+    &__reactSmall2 {
+      display: none;
+    }
+    &__awsSmall {
+      display: none;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .stackTechnology {
+    &__mongoDBSmall {
+      display: none;
+    }
+    &__awsSmall2 {
+      display: none;
+    }
+    &__reactSmall {
+      display: none;
+    }
+    &__mongoDBMedium {
+      display: none;
+    }
+    &__mongoDBMedium2 {
+      display: none;
+    }
+
+    &__reactBig {
+      position: absolute;
+      bottom: 0%;
+      right: 17%;
+    }
+    &__awsBig {
+      position: absolute;
+      left: 17%;
+      top: 4%;
+    }
+    &__node {
+      position: absolute;
+      left: 17%;
+      bottom: 0;
+    }
+    &__mongoDBBig {
+      position: absolute;
+      right: 17%;
+      top: 4%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .stackTechnology {
+    &__textBlock {
+      text-align: center;
+      width: 90%;
+      &Title {
+        font-size: 36px;
+        line-height: 40px;
+        margin-bottom: 30px;
+      }
+      &Sub {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      &Desc {
+        // width: 80%;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    &__reactBig {
+      position: absolute;
+      bottom: 0%;
+      right: 5%;
+    }
+    &__awsBig {
+      position: absolute;
+      left: 5%;
+      top: 4%;
+    }
+    &__node {
+      position: absolute;
+      left: 5%;
+      bottom: 0;
+    }
+    &__mongoDBBig {
+      position: absolute;
+      right: 4%;
+      top: 4%;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .stackTechnology {
+    &__textBlock {
+      &Title {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 30px;
+      }
+      &Sub {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      &Desc {
+        // width: 80%;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    &__reactBig {
+      position: absolute;
+      right: 1%;
+    }
+    &__awsBig {
+      position: absolute;
+      left: 1%;
+    }
+    &__node {
+      position: absolute;
+      left: 1%;
+    }
+    &__mongoDBBig {
+      position: absolute;
+      right: 1%;
+    }
+  }
+}

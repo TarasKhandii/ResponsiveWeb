@@ -1,0 +1,30 @@
+@import "../../assets/style/colors/colors.scss";
+@import "../../assets/style/fonts/fonts.scss";
+
+.texhnology {
+  display: flex;
+  flex-direction: row;
+
+  &__title {
+    padding: 8px 17px 8px 15px;
+    text-transform: uppercase;
+    font-family: GilroySemiBold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: $black;
+    background: rgba(196, 196, 196, 0.2);
+
+    border-radius: 4px;
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .texhnology {
+    flex-wrap: wrap;
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+}

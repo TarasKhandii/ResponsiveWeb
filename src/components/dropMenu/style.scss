@@ -1,0 +1,67 @@
+@import "../../assets/style/colors/colors.scss";
+@import "../../assets/style/fonts/fonts.scss";
+
+.dropMenu {
+  position: relative;
+  &__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    p {
+      font-size: 32px;
+      font-family: GilroySemiBold;
+      font-size: 16px;
+      line-height: 19px;
+      margin-right: 4px;
+    }
+  }
+  svg {
+    transition: 0.4s ease;
+    transform: rotate(0deg);
+  }
+  ul {
+    background-color: $white;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 25px;
+    left: -65px;
+    transition: 0.3s ease all;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    li {
+      padding-top: 5px;
+      display: flex;
+      width: 200px;
+      list-style-type: none;
+      cursor: pointer;
+      justify-content: center;
+      a {
+        text-decoration: none;
+        margin-bottom: 4px;
+      }
+    }
+  }
+  &Open {
+    & > ul {
+      height: 80px;
+      box-shadow: 2px 5px 18px -4px rgba(0, 0, 0, 0.96);
+      z-index: 100;
+      & > li {
+        display: flex;
+        justify-content: center;
+        transition: 0.5s ease all;
+        &:hover {
+          background-color: $green;
+        }
+      }
+    }
+    svg {
+      transition: 0.4s ease;
+      transform: rotate(180deg);
+    }
+  }
+}

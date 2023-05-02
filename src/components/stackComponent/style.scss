@@ -1,0 +1,54 @@
+@import "../../assets/style/colors/colors.scss";
+@import "../../assets/style/fonts/fonts.scss";
+
+.stackComponent {
+  width: 90%;
+  background-color: $tuna;
+  border-bottom-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding-top: 97px;
+  padding-bottom: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 154px;
+  margin-top: 137px;
+  h1 {
+    color: $white;
+    margin-top: 17px;
+    margin-bottom: 134px;
+    text-align: center;
+    font-size: 48px;
+    line-height: 56px;
+    font-family: GilroySemiBold;
+  }
+}
+
+@media (max-width: 1150px) {
+  .stackComponent {
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .stackComponent {
+    width: 100%;
+    h1 {
+      margin-right: 10px;
+      margin-left: 10px;
+      font-size: 40px;
+    }
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
