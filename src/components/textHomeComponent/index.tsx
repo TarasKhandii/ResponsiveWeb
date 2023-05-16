@@ -26,4 +26,5 @@ const TextHomeComponent: React.FC<TextHomeComponentProps> = ({
     </div>
   );
 };
+
 export default TextHomeComponent;

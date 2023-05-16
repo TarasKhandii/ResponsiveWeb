@@ -1,5 +1,6 @@
 @import "../../assets/style/colors/colors.scss";
 @import "../../assets/style/fonts/fonts.scss";
+
 .contentPart2 {
   width: 100%;
   display: flex;
@@ -52,7 +53,7 @@
   &__imgBlock {
     position: relative;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding-left: 12%;
     padding-top: 20px;
     margin-top: 135px;

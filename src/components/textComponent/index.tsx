@@ -1,5 +1,7 @@
+/* ---------------------------------- style --------------------------------- */
 import ICONS from "../../assets/icons/icons";
 import "./style.scss";
+
 interface TextComponentProps {
   title: string;
   subtitle: string;
@@ -16,4 +18,5 @@ const TextComponent: React.FC<TextComponentProps> = ({ title, subtitle }) => {
     </div>
   );
 };
+
 export default TextComponent;

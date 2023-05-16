@@ -1,6 +1,7 @@
 /* ---------------------------------- Style --------------------------------- */
 import ICONS from "../../assets/icons/icons";
 import "./style.scss";
+
 interface BtnProps {
   title: string;
   onClick?: () => void;

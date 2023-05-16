@@ -1,5 +1,6 @@
 @import "../../assets/style/colors/colors.scss";
 @import "../../assets/style/fonts/fonts.scss";
+
 .contentPart3 {
   width: 100%;
   display: flex;
@@ -30,7 +31,7 @@
   }
   &__imgBlock {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding-right: 44px;
     padding-top: 8px;
     margin-top: 96px;
@@ -81,7 +82,7 @@
       );
       border-top-right-radius: 72px;
       display: flex;
-      align-items: end;
+      align-items: flex-end;
     }
   }
 }

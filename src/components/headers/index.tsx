@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { ROUTES } from "../../router/routes";
 /* -------------------------------- Component ------------------------------- */
 import DropMenu from "../dropMenu";
+import { servicesArr, solutionsArr } from "../dropMenu/types";
 
 const Header: React.FC = () => {
   return (
@@ -15,12 +16,11 @@ const Header: React.FC = () => {
           <h1>TEONICA</h1>
         </Link>
       </div>
-
       <input type="checkbox" className="input" id="burgerMenu" />
       <nav className="navHeader">
         <div className="header__leftBlock">
-          <DropMenu type={true} />
-          <DropMenu type={false} />
+          <DropMenu dropList={servicesArr} />
+          <DropMenu dropList={solutionsArr} />
           <Link to={ROUTES.casePage}>Case Studies</Link>
         </div>
         <div className="header__rightBlock">

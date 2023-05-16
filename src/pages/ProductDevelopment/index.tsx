@@ -9,6 +9,7 @@ import ContentPart2 from "../../components/contentPart2";
 import "./style.scss";
 import Laptop from "../../assets/images/laptop.png";
 import ProductImg from "../../assets/images/productPageImg.png";
+import { ProcessListFirst } from "../../components/processComponent/types";
 
 const ProductDevelopment: React.FC = () => {
   return (
@@ -26,7 +27,7 @@ const ProductDevelopment: React.FC = () => {
         lastTitle="Our remote team will take care of building highly scalable web, mobile, and server-side applications when you will be caring about the business side."
         image={ProductImg}
       />
-      <ProcessComponent typeProcess={true} />
+      <ProcessComponent typeProcess={true} processList={ProcessListFirst} />
       <Portfolio />
       <Footer />
     </div>

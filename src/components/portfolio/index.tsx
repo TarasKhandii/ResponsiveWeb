@@ -1,7 +1,8 @@
-// Style
-import BlackBtn from "../blackBtn";
+/* ---------------------------------- Style --------------------------------- */
 import LogoPortfolio from "../logoPortfolio";
 import "./style.scss";
+/* -------------------------------- Component ------------------------------- */
+import BlackBtn from "../blackBtn";
 
 const Portfolio: React.FC = () => {
   return (

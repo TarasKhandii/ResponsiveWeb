@@ -5,6 +5,8 @@ import IntroPart from "../../components/introPart";
 import Portfolio from "../../components/portfolio";
 import ProcessComponent from "../../components/processComponent";
 import ContentPart2 from "../../components/contentPart2";
+/* ---------------------------------- Types --------------------------------- */
+import { ProcessListSecond } from "../../components/processComponent/types";
 /* ---------------------------------- Style --------------------------------- */
 import "./style.scss";
 import Staff from "../../assets/images/ITStaff.png";
@@ -26,10 +28,11 @@ const ITStaff: React.FC = () => {
         lastTitle="Scale fast with our frontend and backend JavaScript engineers. Or hire our top-notch experts to manage and boost the development."
         image={Hands}
       />
-      <ProcessComponent typeProcess={false} />
+      <ProcessComponent typeProcess={false} processList={ProcessListSecond} />
       <Portfolio />
       <Footer />
     </div>
   );
 };
+
 export default ITStaff;

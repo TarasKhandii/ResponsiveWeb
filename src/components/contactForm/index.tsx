@@ -1,4 +1,4 @@
-// Style
+/* ---------------------------------- Style --------------------------------- */
 import BlackBtn from "../blackBtn";
 import "./style.scss";
 

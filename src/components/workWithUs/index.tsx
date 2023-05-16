@@ -3,6 +3,7 @@ import "./style.scss";
 import BlackDot from "../../assets/images/blackDot.png";
 import ManFirst from "../../assets/images/homePageImg/man1.png";
 import ManSecond from "../../assets/images/homePageImg/man2.png";
+/* -------------------------------- Component ------------------------------- */
 import TextComponent from "../textComponent";
 
 const WorkWithUs: React.FC = () => {

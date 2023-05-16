@@ -1,4 +1,6 @@
+/* --------------------------------- Assets --------------------------------- */
 import ICONS from "../../assets/icons/icons";
+/* ------------------------------ Basic Import ------------------------------ */
 import { ReactElement } from "react";
 
 export interface IProcessList {

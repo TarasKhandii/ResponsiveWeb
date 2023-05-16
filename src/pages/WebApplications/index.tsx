@@ -39,4 +39,5 @@ const WebApplicationsPage: React.FC = () => {
     </div>
   );
 };
+
 export default WebApplicationsPage;

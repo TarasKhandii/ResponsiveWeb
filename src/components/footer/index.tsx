@@ -3,7 +3,9 @@ import ICONS from "../../assets/icons/icons";
 import "./style.scss";
 /* -------------------------------- Component ------------------------------- */
 import ContactFrom from "../contactForm";
+/* -------------------------------- Libraries ------------------------------- */
 import { Link } from "react-router-dom";
+/* --------------------------------- Routes --------------------------------- */
 import { ROUTES } from "../../router/routes";
 
 const Footer: React.FC = () => {

@@ -37,4 +37,5 @@ const ServerSideAppPage: React.FC = () => {
     </div>
   );
 };
+
 export default ServerSideAppPage;

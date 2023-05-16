@@ -1,6 +1,7 @@
-// style
+/* ---------------------------------- Style --------------------------------- */
 import ICONS from "../../assets/icons/icons";
 import "./style.scss";
+
 interface GreenBtnProps {
   onClick?: () => void;
   title: string;
